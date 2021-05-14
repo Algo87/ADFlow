@@ -1,0 +1,37 @@
+.flow-table {
+  margin-top: 8px;
+  border-spacing: 0 1rem;
+  border-collapse: initial;
+  & thead th {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    color: #a4a4a4;
+    padding: 16px 4px;
+  }
+  & tbody tr {
+    box-shadow: 0px 4px 18px rgba(7, 38, 164, 0.07);
+    border-radius: 2px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #1c1c1c;
+    &.off-flow {
+      color: rgba(28, 28, 28, 0.25);
+      & td:first-child img {
+        opacity: 0.25;
+      }
+    }
+    & td {
+      background: #ffffff;
+      padding: 16px 4px;
+    }
+    & td:first-child {
+      padding-left: 24px;
+      border-radius: 4px 0 0 4px;
+    }
+    & td:last-child {
+      padding-right: 24px;
+      border-radius: 0 4px 4px 0;
+    }
+  }
+}
